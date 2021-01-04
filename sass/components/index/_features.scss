@@ -10,21 +10,12 @@
 .features-item {
     width: 270px;
 }
-.features-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background: var(--secondary-background);
-}
 
 .features-item:not(:last-child) {
     margin-right: 30px;
 }
 
-.features-list h3 {
+.features-item h3 {
     margin-top: 0;
     margin-bottom: 10px;
     font-weight: 700;
@@ -34,12 +25,22 @@
     text-transform: uppercase;
 }
 
-.features-list p {
+.features-item p {
     margin-top: 0;
     margin-bottom: 0;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+}
+
+.features-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background: $secondary-background;
 }

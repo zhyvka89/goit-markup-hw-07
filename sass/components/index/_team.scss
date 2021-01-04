@@ -1,7 +1,7 @@
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
-    background: var(--secondary-background);
+    background: $secondary-background;
 }
 
 .team-title {
@@ -13,24 +13,24 @@
     text-align: center;
     letter-spacing: 0.03em;
 }
+
+.team-list{
+    display: flex;  
+}
+
 .team-item {
     width: 270px;
-    background: var(--white-color);
+    background: $white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px $border-radius $border-radius;
 }
 
 .team-item:not(:last-child) {
     margin-right: 30px;
 }
 
-.team-list{
-    display: flex;  
-}
-
 .team-name {
 padding: 30px 15px;
-
 }
 
 .team-name h3 {
@@ -46,7 +46,7 @@ padding: 30px 15px;
 .team-name p {
     margin-top: 0px;
     margin-bottom: 16px;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -68,16 +68,16 @@ padding: 30px 15px;
     align-items: center;
     width: 44px;
     height: 44px;
-    background: var(--white-color);
+    background: $white-color;
     border-radius: 50%;
-    color: var(--icon-color);
-    transition: color 250ms var(--timing-function), background 250ms var(--timing-function) ;
-}
+    color: $icon-color;
+    transition: color 250ms $timing-function, background 250ms $timing-function;
 
-.social-list .link:hover,
-.social-list .link:focus {
-    background: var(--accent-color);
-    color: var(--white-color);
+    &:hover,
+    &:focus {
+        background: $accent-color;
+        color: $white-color;
+    }
 }
 
 .social-icon {

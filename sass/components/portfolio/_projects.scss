@@ -49,11 +49,8 @@
 }
 
 .project-overlay p {
+    @include text-size (400, 18px, 1.56, 0.03em);
     margin: 0;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
     color: $white-color;
 }
 
@@ -63,21 +60,15 @@
 }
 
 .project-title {
+    @include text-size (700, 18px, 2, 0.06em);
     margin-top: 0;
     margin-bottom: 4px;
     color: $primary-text-color;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
 }
 
 .project-type {
+    @include text-size (400, 16px, 1.9, 0.03em);
     margin-top: 0;
     margin-bottom: 0;
     color: $secondary-text-color;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
 }

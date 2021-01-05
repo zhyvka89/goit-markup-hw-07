@@ -24,38 +24,17 @@
 }
 
 .adrs-list p {
+    @include text-size (400, 14px, 1.7, 0.03em);
     margin-top: 0;
     margin-bottom: 0;
     color: $white-color;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;    
-    letter-spacing: 0.03em;    
+    font-style: normal;  
 }
 
-//  .adrs-link {
-//     color: $footer-address-color;
-//     font-style: normal;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.1;
-//     letter-spacing: 0.02em;
-//     transition: color 250ms $timing-function;
-// }
-
-// .adrs-link:hover,
-// .adrs-link:focus {
-//     color: $accent-color;
-// }
-
 .adrs-link {
+    @include text-size (500, 14px, 1.1, 0.02em);
     color: $footer-address-color;
     font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
     transition: color 250ms $timing-function;
 
     &:hover,
@@ -73,13 +52,9 @@
 }
 
 .footer-links p {
+    @include text-size (700, 14px, 1.1, 0.03em);
     margin-top: 0;
     margin-bottom: 20px;
-    font-style: 700;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $white-color;
 }
@@ -91,22 +66,6 @@
 .footer-item:not(:last-child) {
     margin-right: 10px;
 }
-
-// .footer-item .link {
-//     justify-content: center;
-//     align-items: center;
-//     width: 44px;
-//     height: 44px;
-//     background: $icon-background;
-//     border-radius: 50%;
-//     color: $white-color;
-//     transition: background 250ms $timing-function;
-// }
-
-
-// .footer-item .link:hover {
-//     background: $accent-color;
-// }
 
 .footer-item .link {
     justify-content: center;
@@ -128,12 +87,9 @@
 }
 
 .footer-form p {
+    @include text-size (700, 14px, 1.1, 0.03em);
     margin-top: 0;
     margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $white-color;
 }
@@ -151,20 +107,12 @@
 }
 
 .form-button {
+    @extend %button-style;
     display: inline-flex;
     padding: 10px 28px;
     width: 200px;
     height: 50px;
-    background: $accent-color;
-    color: $white-color;
-    border: none;
-    border-radius: $border-radius;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
     text-align: center;
-    letter-spacing: 0.06em;
-    cursor: pointer;
     transition: background 250ms $timing-function;
 
     &:hover {

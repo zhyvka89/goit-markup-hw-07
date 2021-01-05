@@ -1,7 +1,6 @@
 .portfolio {
+    @extend %section-pudding;
     border-top: 1px solid rgba(236, 236, 236, 1);
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .button-list {
@@ -15,15 +14,12 @@
 }
 
 .link-button {
+    @include text-size (500, 16px, 1.6, 0.03em);
     padding: 6px 22px;
     border: 0px;
     border-radius: $border-radius;
     font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
     text-align: center;
-    letter-spacing: 0.03em;
     transition: color 250ms $timing-function, background 250ms $timing-function, box-shadow 250ms $timing-function;
 
     &:hover,

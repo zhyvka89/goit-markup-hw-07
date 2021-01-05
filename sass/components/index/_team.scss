@@ -1,17 +1,10 @@
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @extend %section-pudding;
     background: $secondary-background;
 }
 
 .team-title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
+   @extend %section-title;
 }
 
 .team-list{
@@ -30,27 +23,21 @@
 }
 
 .team-name {
-padding: 30px 15px;
+    padding: 30px 15px;
 }
 
 .team-name h3 {
+    @include text-size (500, 16px, 1.2, 0.03em);
     margin-top: 0;
     margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
     text-align: center;
 }
 
 .team-name p {
+    @include text-size (400, 16px, 1.2, 0.03em);
     margin-top: 0px;
     margin-bottom: 16px;
     color: $secondary-text-color;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
     text-align: center;
 }
 
